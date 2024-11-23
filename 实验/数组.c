@@ -205,7 +205,7 @@ int main()
     double cpu_time_used;
     start = clock();
     // queen_recursion(14,0);
-    queen(14);
+    queen_recursion(17,0);
     end = clock();
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
     printf("Function execution time: %f seconds\n", cpu_time_used);
