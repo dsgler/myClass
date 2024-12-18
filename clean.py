@@ -7,7 +7,7 @@ def list_files_without_extension(folder_path):
         # 获取文件的完整路径
         file_path = os.path.join(folder_path, filename)
         # 检查是否是文件且没有后缀名
-        if os.path.isfile(file_path) and os.path.splitext(filename)[1]!=".c":
+        if os.path.isfile(file_path) and os.path.splitext(filename)[1]not in [".c",".cpp",".txt",".asm"]:
             files_to_delete.append(file_path)
     return files_to_delete
 
